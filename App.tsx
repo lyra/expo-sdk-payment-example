@@ -15,7 +15,7 @@ export default function App() {
    */
   const getProcessPaymentContext = async () => {
     var formTokenVersion = getFormTokenVersion();
-    return fetch(config.merchantServerUrl + "/createPayment/QUALIF_FRANCE", {
+    return fetch(config.merchantServerUrl + "/createPayment", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -45,7 +45,7 @@ export default function App() {
    * @param {*} paymentResult  The result of SDK process method
    */
   const verifyPayment = async (paymentResult: any) => {
-    return fetch(config.merchantServerUrl + "/verifyResult/QUALIF_FRANCE", {
+    return fetch(config.merchantServerUrl + "/verifyResult", {
       method: "POST",
       headers: {
         Accept: "application/json",
