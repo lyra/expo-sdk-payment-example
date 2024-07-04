@@ -27,7 +27,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.devmobilelyra.exposdkpaymentexample"
+      "bundleIdentifier": "com.lyra.exposdkpaymentexample"
     },
     "android": {
       "adaptiveIcon": {
@@ -41,7 +41,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "2bed0131-950c-47bb-82e8-aa9233df1ed6"
+        "projectId": "dc70eb00-a009-4833-9d8f-4298e2c27d46"
       }
     }
   }
