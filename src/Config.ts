@@ -5,7 +5,7 @@ export default {
   //FIXME: Change by the right REST API Server Name (available in merchant BO: Settings->Shop->REST API Keys)
   apiServerName: "<REPLACE_ME>",
 
-  // FIXME: change by your merchant payment server url
+  // FIXME: change by the right merchant payment server url
   merchantServerUrl: "<REPLACE_ME>",
 
   //Customer Informations
