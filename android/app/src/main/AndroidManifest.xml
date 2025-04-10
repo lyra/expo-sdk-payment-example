@@ -27,5 +27,6 @@
         <data android:scheme="com.tmejane.exposdkpaymentexample"/>
       </intent-filter>
     </activity>
+    <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
   </application>
 </manifest>
