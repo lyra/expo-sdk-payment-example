@@ -5,7 +5,7 @@ export default {
   //FIXME: Change by the right REST API Server Name (available in merchant BO: Settings->Shop->REST API Keys)
   apiServerName: "<REPLACE_ME>",
 
-  // FIXME: change by your merchant payment server url
+  // FIXME: change by the right merchant payment server url
   merchantServerUrl: "<REPLACE_ME>",
 
   //Customer Informations
@@ -22,4 +22,7 @@ export default {
   // Environment TEST or PRODUCTION, refer to documentation for more information
   // FIXME: change by your targeted environment
   paymentMode: "TEST",
+
+  // Used only for Apple Pay
+  applePayMerchantId: "<REPLACE_ME>",
 };

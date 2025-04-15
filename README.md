@@ -36,19 +36,14 @@ Please check our documentation to understand how to integrate our SDK in your Ex
 
 2. Open the project under your IDE like Visual Studio Code.
 
-3. Edit the following fields in `Config.ts`
+3. Edit the following fields in `src/Config.ts`
 
    - merchantServerUrl: replace by your merchant server Url.
    - publicKey: replace with your public key that you can find in your back-office.
    - apiServerName: replace with your REST API server name that you can find in your back-office.
 
 4. Run `yarn`
-5. Run `eas build --profile development --platform ios` (to test on iOS device).
-6. Run `eas build --profile development --platform android` (to test on Android device).
-7. Install the generated application in steps 5 and 6 on the corresponding device.
-
-6. Run `expo start --dev-client` and that's all! :)
-
+5. Run `yarn ios` or `yarn android` and that's all! :)
 
 ## Troubleshooting
 
@@ -75,4 +70,3 @@ Check official integration documentation in order to check all possible error co
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
-
