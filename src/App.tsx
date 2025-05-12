@@ -3,6 +3,8 @@ import {
   initialize,
   getFormTokenVersion,
   process,
+  InitializeOptions,
+  ProcessOptions,
 } from "@lyracom/react-native-sdk-payment-module";
 import { useCallback } from "react";
 import Config from "./Config";
@@ -73,17 +75,16 @@ export default function App() {
     try {
       // 1.Initialize Payment SDK
       await initialize(Config.publicKey, {
-        cardScanningEnabled: true,
-        nfcEnabled: true,
-        apiServerName: Config.apiServerName,
-        applePayMerchantId: Config.applePayMerchantId,
+        [InitializeOptions.apiServerName]: Config.apiServerName,
       });
 
       // 2. Execute getProcessPaymentContext for get the formToken (required param in SDK process method)
       let formToken = await getProcessPaymentContext();
 
       // // 3. Call the PaymentSDK process method
-      const result = await process(formToken!, {});
+      const result = await process(formToken!, {
+        [ProcessOptions.customHeaderLabel]: "Custom header",
+      });
 
       //4. Verify the payment using your server
       verifyPayment(result.response)
