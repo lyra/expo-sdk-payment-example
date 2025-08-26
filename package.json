@@ -8,7 +8,7 @@
     "ios": "expo run:ios --device"
   },
   "dependencies": {
-    "@lyracom/react-native-sdk-payment-module": "^2.1.0",
+    "@lyracom/react-native-sdk-payment-module": "^3.0.0",
     "expo": "~52.0.42",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",

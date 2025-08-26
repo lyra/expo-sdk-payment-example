@@ -1549,7 +1549,7 @@ PODS:
     - React-logger (= 0.77.2)
     - React-perflogger (= 0.77.2)
     - React-utils (= 0.77.2)
-  - SdkPaymentModule (2.1.0):
+  - SdkPaymentModule (3.0.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1890,7 +1890,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: f334cebc0beed0a72490492e978007082c03d533
   ReactCodegen: 6f764a42662ad6379fd3fbb9c09baff6e4797b20
   ReactCommon: 7763e59534d58e15f8f22121cdfe319040e08888
-  SdkPaymentModule: 1f16264d13f0ca0480da5583822c5137f3d915d2
+  SdkPaymentModule: e5e419847c12a8e7b9e3770a7537d812a76e1772
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 31a098f74c16780569aebd614a0f37a907de0189
