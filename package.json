@@ -1,8 +1,10 @@
 {
+  "private": true,
   "name": "expo-sdk-payment-example",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "format": "prettier --write .",
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios --device"
@@ -17,14 +19,19 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "prettier": "^3.6.2",
     "typescript": "^5.3.3"
   },
-  "private": true,
   "expo": {
     "install": {
       "exclude": [
         "react-native@~0.76.8"
       ]
     }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
   }
 }
