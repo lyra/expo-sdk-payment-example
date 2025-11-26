@@ -26,6 +26,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [["./plugins/withLyraCardRecognizer"]]
+    "plugins": [["./plugins/withLyra"], ["./plugins/withLyraCardRecognizer"]]
   }
 }
