@@ -1,6 +1,6 @@
 const { withPodfile } = require('@expo/config-plugins')
 
-function withLyra(config) {
+function withLyraPaymentSDK(config) {
   return withPodfile(config, (config) => {
     let contents = config.modResults.contents
 
@@ -34,4 +34,4 @@ function withLyra(config) {
   })
 }
 
-module.exports = withLyra
+module.exports = withLyraPaymentSDK
