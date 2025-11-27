@@ -16,8 +16,6 @@ prepare_react_native_project!
 target 'exposdkpaymentexample' do
   use_expo_modules!
 
-  dynamic_frameworks = ['LyraPaymentSDK', 'LyraMotion', 'LyraMaterial', 'SnapKit']
-
   if ENV['EXPO_USE_COMMUNITY_AUTOLINKING'] == '1'
     config_command = ['node', '-e', "process.argv=['', '', 'config'];require('@react-native-community/cli').run()"];
   else
@@ -46,6 +44,9 @@ target 'exposdkpaymentexample' do
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
 
+  
+  dynamic_frameworks = ['LyraPaymentSDK', 'LyraMotion', 'LyraMaterial', 'SnapKit']
+
   pre_install do |installer|
     installer.pod_targets.each do |pod|
       if dynamic_frameworks.include?(pod.name)
@@ -58,8 +59,8 @@ target 'exposdkpaymentexample' do
       end
     end
   end
-
-  post_install do |installer|
+    
+	post_install do |installer|
     react_native_post_install(
       installer,
       config[:reactNativePath],
