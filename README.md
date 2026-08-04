@@ -1,5 +1,10 @@
 # Expo SDK payment example
 
+> [!WARNING]
+> This repository is **deprecated** and no longer maintained.
+> 
+> Please check this repository for Expo example: https://github.com/lyra/react-native-sdk-payment-module/tree/main/apps/expoExample
+
 ## Summary
 
 The aim of this repository is to explain how to integrate our Payment Mobile SDK into an Expo React Native application.
